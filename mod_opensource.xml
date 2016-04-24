@@ -7,13 +7,14 @@
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
 	<authorUrl>www.alexonbalangue.me</authorUrl>
-	<version>1.8.9</version>
+	<version>1.9</version>
 	<description>MOD_OPENSOURCE_XML_DESC</description>
 	<media destination="mod_opensource" folder="media">
 		<filename>index.html</filename>
 		<folder>bootstrap</folder>
 		<folder>dojo</folder>
 		<folder>fontawesome</folder>
+		<folder>icofont</folder>
 		<folder>foundation.zurb</folder>
 		<folder>ivory</folder>
 		<folder>jquery</folder>
@@ -105,6 +106,16 @@
 						<option value="3">MaxCDN minified</option>
 						<option value="4">CDN cloudflare minified</option>
 						<option value="5">CDN jsdelivr minified</option>
+				</field>
+				<field 
+					name="icofont-site"
+					 type="list" 
+					default="0"
+					label="Icofont"
+					description="Version 1.0.0-alpha by Sharpboostrap">
+						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
+						<option value="1">base</option>
+						<option value="2">minified</option>
 				</field>
 				<field 
 					name="jquery-site"

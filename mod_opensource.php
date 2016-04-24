@@ -2,7 +2,7 @@
 /**
  * @package	Module for Joomla!
  * @subpackage  mod_opensource
- * @version	1.8.9
+ * @version	1.9
  * @author	AlexonBalangue.me
  * @copyright	(C) 2012-2016 Alexon Balangue. All rights reserved.
  * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -11,6 +11,7 @@ defined('_JEXEC') or die;
 
 $jqueryui_themes = $params->get('jqueryui-site-themes');
 $bootstrap_site = $params->get('bootstrap-site');
+$icofont_site = $params->get('icofont-site');
 $fontawesome_site = $params->get('fontawesome-site');
 $jquery_site = $params->get('jquery-site');
 $jqueryui_site = $params->get('jqueryui-site');
