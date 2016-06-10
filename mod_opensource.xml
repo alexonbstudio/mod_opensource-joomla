@@ -2,12 +2,12 @@
 <extension type="module" version="3.5" client="site" method="upgrade">
 	<name>Module - Open Source</name>
 	<author>Alexon Balangue</author>
-	<creationDate>May, 16th 2016</creationDate>
+	<creationDate>June, 6th 2016</creationDate>
 	<copyright>Copyright (C) 2012-2016 Alexon Balangue.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
 	<authorUrl>www.alexonbalangue.me</authorUrl>
-	<version>1.9.1</version>
+	<version>2.0</version>
 	<description>MOD_OPENSOURCE_XML_DESC</description>
 	<media destination="mod_opensource" folder="media">
 		<filename>index.html</filename>
@@ -122,7 +122,7 @@
 					 type="list" 
 					default="0"
 					label="Jquery"
-					description="Version 1.12.3/2.2.3">
+					description="Version 1.12.4/2.2.4">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base v1.x</option>
 						<option value="2">minified v1.x</option>	
@@ -244,7 +244,7 @@
 					 type="radio" 
 					default="0"
 					label="Dojo"
-					description="Version 1.10.4">
+					description="Version 1.11.1">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">minified</option>
 						<option value="2">Google API CDN minified</option>
@@ -322,12 +322,12 @@
 					 type="radio" 
 					default="0"
 					label="Foundation Zurb"
-					description="Version 6.2.1">
+					description="Version 6.2.3">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base</option>
 						<option value="2">minified</option>
-						<option value="3">minified CDN CloudFlare V6.1.2</option>
-						<option value="4">Jsdelivr CDN base v6.1.2</option>
+						<option value="3">minified CDN CloudFlare V6.2.3</option>
+						<option value="4">Jsdelivr CDN base v6.2.3</option>
 				</field>
 				<field 
 					name="htmlkickstart-site"
@@ -377,12 +377,12 @@
 					 type="radio" 
 					default="0"
 					label="angularjs"
-					description="Version 1.5.5">
+					description="Version 1.5.6">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base</option>
 						<option value="2">minifield</option>
 						<option value="3">CDN Google minifield</option>
-						<option value="4">CDN jsdelivr minifield v1.4.7</option>
+						<option value="4">CDN jsdelivr minifield</option>
 						<option value="5">CDN Cloudflare minifield</option>
 				</field>		
 				<field 
@@ -563,6 +563,18 @@
 						<option value="4">minified compatible Angular</option>
 						<option value="5">base compatible Jquery</option>
 						<option value="6">minified compatible Jquery</option>
+				</field>
+				<field 
+					name="smoothjs-site"
+					 type="list" 
+					default="0"
+					label="Smooth-Scroll"
+					description="Version 9.1.4">
+						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
+						<option value="1">base</option>
+						<option value="2">minified</option>
+						<option value="3">jsdelivr CDN minified</option>
+						<option value="4">CloudFlare CDN minified v10.0.0</option>
 				</field>
 			
 			</fieldset>

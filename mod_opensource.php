@@ -2,7 +2,7 @@
 /**
  * @package	Module for Joomla!
  * @subpackage  mod_opensource
- * @version	1.9.1
+ * @version	2.0
  * @author	AlexonBalangue.me
  * @copyright	(C) 2012-2016 Alexon Balangue. All rights reserved.
  * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -48,6 +48,7 @@ $animate_site = $params->get('animate-site');
 $wowjs_site = $params->get('wowjs-site');
 $fancyBox_site = $params->get('fancyBox-site');
 $CountUPJs_site = $params->get('countupjs-site');
+$smoothJs_site = $params->get('smoothjs-site');
 
 /*****************[if HTML5]******************/
 $html4or5_config = $params->get('html4or5');
