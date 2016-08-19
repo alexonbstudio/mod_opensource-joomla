@@ -977,7 +977,7 @@
 		</fields>
 	</config>
 	<updateservers>
-		<server type="collection" priority="1" name="Accredited by Alexon Balangue">https://www.alexonbalangue.me/update/joomla/general.xml</server>
-		<server type="extension" priority="2" name="Module - Open Source">https://www.alexonbalangue.me/update/joomla/xml/mod_opensource.xml</server>
+		<server type="collection" priority="1" name="Accredited by Alexon Balangue">https://jupdates.alexonbalangue.me/update/joomla/general.xml</server>
+		<server type="extension" priority="2" name="Module - Open Source">https://jupdates.alexonbalangue.me/update/joomla/xml/mod_opensource.xml</server>
 	</updateservers>
 </extension>
