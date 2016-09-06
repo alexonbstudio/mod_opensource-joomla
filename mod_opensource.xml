@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.5" client="site" method="upgrade">
+<extension type="module" version="3.6" client="site" method="upgrade">
 	<name>Module - Open Source</name>
 	<author>Alexon Balangue</author>
-	<creationDate>June, 6th 2016</creationDate>
+	<creationDate>September, 6th 2016</creationDate>
 	<copyright>Copyright (C) 2012-2016 Alexon Balangue.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
 	<authorUrl>www.alexonbalangue.me</authorUrl>
-	<version>2.0</version>
+	<version>2.1</version>
 	<description>MOD_OPENSOURCE_XML_DESC</description>
 	<media destination="mod_opensource" folder="media">
 		<filename>index.html</filename>
@@ -122,7 +122,7 @@
 					 type="list" 
 					default="0"
 					label="Jquery"
-					description="Version 1.12.4/2.2.4">
+					description="Version 1.12.4/2.2.4/3.1.0">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base v1.x</option>
 						<option value="2">minified v1.x</option>	
@@ -132,19 +132,23 @@
 						<option value="6">MaxCDN minified v2.x</option>
 						<option value="7">Google API minified v1.x</option>
 						<option value="8">Google API minified v2.x</option>
-						<option value="9">Microsoft Ajax CDN minified v1.1.13</option>
-						<option value="10">Microsoft Ajax CDN minified v2.1.4</option>
+						<option value="9">Microsoft Ajax CDN minified v1.x</option>
+						<option value="10">Microsoft Ajax CDN minified v2.x</option>
 						<option value="11">Cloudflare CDN minified v1.x</option>
 						<option value="12">Cloudflare CDN minified v2.x</option>
 						<option value="13">Jsdelivr CDN minified v1.x</option>
 						<option value="14">Jsdelivr CDN minified v2.x</option>
+						<option value="15">Cloudflare CDN base v3.x</option>
+						<option value="16">Cloudflare CDN minified v3.x</option>
+						<option value="17">base v3.x</option>
+						<option value="18">minified v3.x</option>
 				</field>
 				<field 
 					name="jqueryui-site"
 					 type="list" 
 					default="0"
 					label="Jquery UI"
-					description="Version 1.11.4">
+					description="Version 1.12.0">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base</option>
 						<option value="2">minified</option>
@@ -162,7 +166,7 @@
 					 type="list" 
 					default="smoothness"
 					label="Jquery UI (themes)"
-					description="Version 1.11.4">
+					description="Version 1.12.0">
 						<option value="smoothness">smoothness</option>
 						<option value="black-tie">black-tie</option>
 						<option value="blitzer">blitzer</option>
@@ -390,7 +394,7 @@
 					 type="list" 
 					default="0"
 					label="Bootstrap"
-					description="Version 3.3.6">
+					description="Version 3.3.7">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base</option>
 						<option value="2">minified</option>
@@ -429,7 +433,7 @@
 					name="metroUI-site"
 					 type="list" 
 					default="0"
-					label="Metro UI 3.0.13"
+					label="Metro UI 3.0.15"
 					description="Version">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">minified (Full separed files CDN Rawgit/MaxCDN)</option>
@@ -442,7 +446,7 @@
 					 type="list" 
 					default="0"
 					label="Weather icons"
-					description="Version 2.0.10">
+					description="Version 2.0.9">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base (icons) </option>
 						<option value="2">minified (icons)</option>
@@ -456,7 +460,7 @@
 					 type="list" 
 					default="0"
 					label="Typicons"
-					description="Version 2.0.7">
+					description="Version 2.0.8">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base </option>
 						<option value="2">minified </option>
@@ -495,7 +499,7 @@
 					 type="list" 
 					default="0"
 					label="ADD to Homescreen"
-					description="Version 3.2.2">
+					description="Version 3.2.3">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">base </option>
 						<option value="2">minified </option>
@@ -586,9 +590,10 @@
 					label="html5shiv/respond"
 					description="html5shiv Version 3.7.3 / respond.js version 1.4.2">
 						<option value="">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">MaxCDN minified</option>
-						<option value="2">jsdelivr CDN minified</option>
-						<option value="3">CloudFlare CDN minified</option>
+						<option value="1">MaxCDN minified (DEV)</option>
+						<option value="2">jsdelivr CDN minified (DEV)</option>
+						<option value="3">CloudFlare CDN minified (DEV)</option>
+						<option value="4">CloudFlare CDN minified (Prod)</option>
 				</field>
 			</fieldset>
 			<fieldset name="amphtml-pre" label="AMP-HTML">	
