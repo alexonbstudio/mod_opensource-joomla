@@ -10,6 +10,8 @@
 defined('_JEXEC') or die;
 
 $jqueryui_themes = $params->get('jqueryui-site-themes');
+$waypointsJs_site = $params->get('waypointsjs-site');
+$ParallaxJs_site = $params->get('parallaxjs-site');
 $bootstrap_site = $params->get('bootstrap-site');
 $icofont_site = $params->get('icofont-site');
 $fontawesome_site = $params->get('fontawesome-site');

@@ -792,7 +792,144 @@ defined('_JEXEC') or die;
 						echo "\n".'<script src="'.$own_cdn.'/effect/countUp-Jqueri.min.js"></script>'; 
 					endif;
 				break;
-			endswitch;			
+				case 7: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/angular-countUp.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/angular-countUp.js"></script>'; 
+					endif;
+				break;
+				case 8: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/angular-countUp.min.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/angular-countUp.min.js"></script>'; 
+					endif;
+				break;
+				case 9: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.js"></script>'; 
+					endif;
+				break;
+				case 10: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>'; 
+					endif;
+				break;
+				case 11: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>'; 
+					endif;
+				break;
+			endswitch;	
+			switch($waypointsJs_site):
+				case 1: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($own_cdn.'/effect/jquery.waypoints.js' ); 
+					else : 
+						echo "\n".'<script src="'.$own_cdn.'/effect/jquery.waypoints.js"></script>'; 
+					endif;
+				break;
+				case 2: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($own_cdn.'/effect/jquery.waypoints.min.js' );
+					else : 
+						echo "\n".'<script src="'.$own_cdn.'/effect/jquery.waypoints.min.js"></script>'; 
+					endif;
+				break;
+				case 3: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>'; 
+					endif;
+				break;
+				case 4: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>'; 
+					endif;
+				break;
+			endswitch;
+			switch($ParallaxJs_site):
+				case 1: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($own_cdn.'/effect/parallax.js' ); 
+					else : 
+						echo "\n".'<script src="'.$own_cdn.'/effect/parallax.js"></script>'; 
+					endif;
+				break;
+				case 2: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($own_cdn.'/effect/parallax.min.js' );
+					else : 
+						echo "\n".'<script src="'.$own_cdn.'/effect/parallax.min.js"></script>'; 
+					endif;
+				break;
+				case 3: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($own_cdn.'/effect/jquery.parallax.js' ); 
+					else : 
+						echo "\n".'<script src="'.$own_cdn.'/effect/jquery.parallax.js"></script>'; 
+					endif;
+				break;
+				case 4: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($own_cdn.'/effect/jquery.parallax.min.js' );
+					else : 
+						echo "\n".'<script src="'.$own_cdn.'/effect/jquery.parallax.min.js"></script>'; 
+					endif;
+				break;
+				case 5: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($own_cdn.'/effect/jquery-parallax.js' ); 
+					else : 
+						echo "\n".'<script src="'.$own_cdn.'/effect/jquery-parallax.js"></script>'; 
+					endif;
+				break;
+				case 6: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($own_cdn.'/effect/jquery-parallax.min.js' );
+					else : 
+						echo "\n".'<script src="'.$own_cdn.'/effect/jquery-parallax.min.js"></script>'; 
+					endif;
+				break;
+				case 7: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.js"></script>'; 
+					endif;
+				break;
+				case 8: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>'; 
+					endif;
+				break;
+				case 9: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>'; 
+					endif;
+				break;
+				case 10: 
+					if($html4or5_config == 0): 
+						$docs->addScriptVersion($proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js' );
+					else : 
+						echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js"></script>'; 
+					endif;
+				break;
+			endswitch;				
 			switch($smoothJs_site):
 				case 1: 
 					if($html4or5_config == 0): 
