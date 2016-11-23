@@ -32,13 +32,13 @@ defined('_JEXEC') or die;
 					$docs->addStyleSheetVersion($own_cdn.'/fontawesome/font-awesome.min.css' ); 
 				break;
 				case 3: 
-					$docs->addStyleSheet( $proto_fi.'maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' ); 
+					$docs->addStyleSheet( $proto_fi.'maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' ); 
 				break;
 				case 4: 
-					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' ); 
+					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' ); 
 				break;
 				case 5: 
-					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css' ); 
+					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css' ); 
 				break;
 			endswitch;
 			switch($icofont_site):
@@ -93,10 +93,10 @@ defined('_JEXEC') or die;
 					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>';   endif;
 				break;
 				case 15: 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>'; endif;
 				break;
 				case 16: 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>'; endif;
 				break;
 				case 17: 
 					if($html4or5_config == 0): $docs->addScript( $own_cdn.'/jquery/jquery-3.x.js' );  else : echo "\n".'<script src="'.$own_cdn.'/jquery/jquery-3.x.js"></script>'; endif;
@@ -116,11 +116,11 @@ defined('_JEXEC') or die;
 				break;
 				case 3: 
 				$docs->addStyleSheet( $proto_fi.'ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/'.$jqueryui_themes.'/jquery-ui.css' ); 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js' );  else : echo "\n".'<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js' );  else : echo "\n".'<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>'; endif;
 				break;
 				case 4: 
 					$docs->addStyleSheet( $proto_fi.'code.jquery.com/ui/1.11.4/themes/'.$jqueryui_themes.'/jquery-ui.css' ); 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'code.jquery.com/ui/1.12.0/jquery-ui.js' );  else : echo "\n".'<script src="//code.jquery.com/ui/1.12.0/jquery-ui.js"></script>'; endif; 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'code.jquery.com/ui/1.12.1/jquery-ui.js' );  else : echo "\n".'<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>'; endif; 
 				break;
 				case 5: 
 					$docs->addStyleSheet( $own_cdn.'/jqueryui/tpl/'.$jqueryui_themes.'/jquery-ui.css' ); 
@@ -131,20 +131,20 @@ defined('_JEXEC') or die;
 					if($html4or5_config == 0): $docs->addScriptVersion($own_cdn.'/jqueryui/tpl/'.$jqueryui_themes.'/jquery-ui.min.js' );  else : echo "\n".'<script src="'.$own_cdn.'/jqueryui/tpl/'.$jqueryui_themes.'/jquery-ui.min.js"></script>'; endif;
 				break;
 				case 7: 
-				$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css' ); 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>'; endif;
+				$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css' ); 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>'; endif;
 				break;
 				case 8: 
-				$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/jquery.ui/1.12.0/jquery-ui.min.css' ); 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/jquery.ui/1.12.0/jquery-ui.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/jquery.ui/1.12.0/jquery-ui.min.js"></script>'; endif;
+				$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/jquery.ui/1.12.1/jquery-ui.min.css' ); 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/jquery.ui/1.12.1/jquery-ui.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/jquery.ui/1.12.1/jquery-ui.min.js"></script>'; endif;
 				break;
 				case 9: 
 				$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/jquery.ui/1.11.4/themes/'.$jqueryui_themes.'/jquery-ui.css' ); 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/jquery.ui/1.12.0/jquery-ui.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/jquery.ui/1.12.0/jquery-ui.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/jquery.ui/1.12.1/jquery-ui.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/jquery.ui/1.12.1/jquery-ui.min.js"></script>'; endif;
 				break;
 				case 10: 
 				$docs->addStyleSheet( $proto_fi.'ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/themes/'.$jqueryui_themes.'/jquery-ui.css' ); 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'ajax.aspnetcdn.com/ajax/jquery.ui/1.12.0/jquery-ui.min.js' );  else : echo "\n".'<script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.12.0/jquery-ui.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js' );  else : echo "\n".'<script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>'; endif;
 				break;
 			endswitch;
 			switch($jquerymobile_site):
@@ -187,11 +187,11 @@ defined('_JEXEC') or die;
 					if($html4or5_config == 0): $docs->addScriptVersion($own_cdn.'/qunit/qunit.min.js' );  else : echo "\n".'<script src="'.$own_cdn.'/qunit/qunit.min.js"></script>'; endif;
 				break;
 				case 3: 
-					$docs->addStyleSheet( $proto_fi.'code.jquery.com/qunit/qunit-1.23.1.css' ); 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'code.jquery.com/qunit/qunit-1.23.1.js' );  else : echo "\n".'<script src="//code.jquery.com/qunit/qunit-1.23.1.js"></script>'; endif;
+					$docs->addStyleSheet( $proto_fi.'code.jquery.com/qunit/qunit-2.0.1.css' ); 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'code.jquery.com/qunit/qunit-2.0.1.js' );  else : echo "\n".'<script src="//code.jquery.com/qunit/qunit-2.0.1.js"></script>'; endif;
 				case 4: 
-					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/qunit/1.23.1/qunit.min.css' ); 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/qunit/1.23.1/qunit.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/qunit/1.23.1/qunit.min.js"></script>'; endif;
+					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/qunit/2.0.1/qunit.min.css' ); 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/qunit/2.0.1/qunit.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/qunit/2.0.1/qunit.min.js"></script>'; endif;
 				break;
 			endswitch;
 			switch($sizzle_site):
@@ -202,10 +202,10 @@ defined('_JEXEC') or die;
 					if($html4or5_config == 0): $docs->addScriptVersion($own_cdn.'/sizzlejs/sizzle.min.js' );  else : echo "\n".'<script src="'.$own_cdn.'/sizzlejs/sizzle.min.js"></script>'; endif;
 				break;
 				case 3: 
-					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdnjs.cloudflare.com/ajax/libs/sizzle/2.3.0/sizzle.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/sizzle/2.3.0/sizzle.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdnjs.cloudflare.com/ajax/libs/sizzle/2.3.3/sizzle.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/sizzle/2.3.3/sizzle.min.js"></script>'; endif;
 				break;
 				case 4: 
-					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdn.jsdelivr.net/sizzle/2.3.0/sizzle.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/sizzle/2.3.0/sizzle.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdn.jsdelivr.net/sizzle/2.3.3/sizzle.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/sizzle/2.3.3/sizzle.min.js"></script>'; endif;
 				break;
 			endswitch;
 			switch($mootools_site):
@@ -252,9 +252,9 @@ defined('_JEXEC') or die;
 					if($html4or5_config == 0): $docs->addScriptVersion($own_cdn.'/lessjs/less.min.js' );  else : echo "\n".'<script src="'.$own_cdn.'/lessjs/less.min.js"></script>'; endif;
 				break;
 				case 2: 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>'; endif;
 				case 3: 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/less/2.6.1/less.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/less/2.6.1/less.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/less/2.7.1/less.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/less/2.7.1/less.min.js"></script>'; endif;
 				break;
 			endswitch;
 			switch($skel_site):
@@ -262,7 +262,7 @@ defined('_JEXEC') or die;
 					if($html4or5_config == 0): $docs->addScriptVersion($own_cdn.'/skel/skel.min.js' );  else : echo "\n".'<script src="'.$own_cdn.'/skel/skel.min.js"></script>'; endif;
 				break;
 				case 2: 
-					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdnjs.cloudflare.com/ajax/libs/skel/3.0.0/skel.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/skel/3.0.0/skel.min.js"></script>'; endif;
+					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>'; endif;
 				break;
 				case 3: 
 					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/skeljs/0.4.6/skel-noscript.css' ); 
@@ -311,11 +311,11 @@ defined('_JEXEC') or die;
 					$docs->addStyleSheetVersion($own_cdn.'/foundation.zurb/foundation.min.css' ); 
 					if($html4or5_config == 0): $docs->addScriptVersion($own_cdn.'/foundation.zurb/foundation.min.js' );  else : echo "\n".'<script src="'.$own_cdn.'/foundation.zurb/foundation.min.js"></script>'; endif;
 				case 3: 
-					$docs->addStyleSheet('cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css' ); 
-					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>'; endif;
+					$docs->addStyleSheet('cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css' ); 
+					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js' );  else : echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script>'; endif;
 				case 4: 
-					$docs->addStyleSheet('cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css' ); 
-					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>'; endif;
+					$docs->addStyleSheet('cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css' ); 
+					if($html4or5_config == 0): $docs->addScript($proto_fi.'cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js' );  else : echo "\n".'<script src="//cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>'; endif;
 				break;
 			endswitch;
 			switch($htmlkickstart_site):
@@ -947,16 +947,16 @@ defined('_JEXEC') or die;
 				break;
 				case 3: 
 					if($html4or5_config == 0): 
-						$docs->addScript('//cdn.jsdelivr.net/smooth-scroll/9.1.4/smooth-scroll.min.js' ); 
+						$docs->addScript('//cdn.jsdelivr.net/smooth-scroll/10.1.0/smooth-scroll.min.js' ); 
 					else : 
-						echo "\n".'<script src="//cdn.jsdelivr.net/smooth-scroll/9.1.4/smooth-scroll.min.js"></script>'; 
+						echo "\n".'<script src="//cdn.jsdelivr.net/smooth-scroll/10.1.0/smooth-scroll.min.js"></script>'; 
 					endif;
 				break;
 				case 4: 
 					if($html4or5_config == 0): 
-						$docs->addScript('//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.js' );
+						$docs->addScript('//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.1.0/js/smooth-scroll.js' );
 					else : 
-						echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.js"></script>'; 
+						echo "\n".'<script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.1.0/js/smooth-scroll.js"></script>'; 
 					endif;
 				break;
 			endswitch;			
