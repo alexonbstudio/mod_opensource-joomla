@@ -666,6 +666,15 @@ defined('_JEXEC') or die;
 						$docs->addStyleSheetVersion($own_cdn.'/mapbox/leaflet.min.css'); 
 					endif;
 				break;
+				case 5: 
+					if($html4or5_config == 0): 
+						$docs->addScript('https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js' );  
+						$docs->addStyleSheet('https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css'); 
+					else : 
+						echo "\n".'<script src="https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js"></script>'; 
+						$docs->addStyleSheet('https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css'); 
+					endif;
+				break;
 			endswitch;
 			
 			/*****************[Effect]******************/
