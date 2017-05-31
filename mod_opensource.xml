@@ -1,44 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.6" client="site" method="upgrade">
+<extension type="module" version="3.7" client="site" method="upgrade">
 	<name>Module - Open Source</name>
 	<author>Alexon Balangue</author>
-	<creationDate>23th, Novembre 2016</creationDate>
-	<copyright>Copyright (C) 2012-2016 Alexon Balangue.</copyright>
+	<creationDate>31th, Mai 2017</creationDate>
+	<copyright>Copyright (C) 2012-2017 Alexon Balangue.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
 	<authorUrl>www.alexonbalangue.me</authorUrl>
-	<version>2.1.3</version>
+	<version>2.2</version>
 	<description>MOD_OPENSOURCE_XML_DESC</description>
 	<media destination="mod_opensource" folder="media">
 		<filename>index.html</filename>
-		<folder>bootstrap</folder>
-		<folder>dojo</folder>
-		<folder>fontawesome</folder>
 		<folder>icofont</folder>
-		<folder>foundation.zurb</folder>
 		<folder>ivory</folder>
-		<folder>jquery</folder>
-		<folder>jquerymobile</folder>
-		<folder>jqueryui</folder>
 		<folder>kickstart</folder>
-		<folder>knacss</folder>
-		<folder>lessjs</folder>
-		<folder>modernizr</folder>
-		<folder>mootols</folder>
-		<folder>qunit</folder>
 		<folder>rotatorjs</folder>
-		<folder>sizzlejs</folder>
-		<folder>skel</folder>
-		<folder>skeleton</folder>
 		<folder>whhg</folder>
-		<folder>angularjs</folder>
 		<folder>cookies</folder>
 		<folder>homescreen</folder>
-		<folder>foundation-icons</folder>
-		<folder>metro-ui</folder>
-		<folder>typicons</folder>
-		<folder>weather-icons</folder>
-		<folder>effect</folder>
 		<folder>amp</folder>	
 	</media>
 	<files>
@@ -76,7 +55,7 @@
 					 type="list" 
 					default="1"
 					label="Protocols CDN"
-					description="">
+					description="" >
 						<option value="1">//</option>
 						<option value="2">http://</option>
 						<option value="3">https://</option>
@@ -100,11 +79,9 @@
 					label="fontawesome"
 					description="Version 4.7.0">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">MaxCDN minified</option>
-						<option value="4">CDN cloudflare minified</option>
-						<option value="5">CDN jsdelivr minified</option>
+						<option value="1">MaxCDN minified</option>
+						<option value="2">CDN cloudflare minified</option>
+						<option value="3">CDN jsdelivr minified</option>
 				</field>
 				<field 
 					name="icofont-site"
@@ -121,26 +98,23 @@
 					 type="list" 
 					default="0"
 					label="Jquery"
-					description="Version 1.12.4/2.2.4/3.1.1">
+					description="Version 1.12.4/2.2.4/3.2.1">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base v1.x</option>
-						<option value="2">minified v1.x</option>	
-						<option value="3">base v2.x</option>
-						<option value="4">minified v2.x</option>	
-						<option value="5">MaxCDN minified v1.x</option>
-						<option value="6">MaxCDN minified v2.x</option>
-						<option value="7">Google API minified v1.x</option>
-						<option value="8">Google API minified v2.x</option>
-						<option value="9">Microsoft Ajax CDN minified v1.x</option>
-						<option value="10">Microsoft Ajax CDN minified v2.x</option>
-						<option value="11">Cloudflare CDN minified v1.x</option>
-						<option value="12">Cloudflare CDN minified v2.x</option>
+						<option value="1">MaxCDN minified v1.x</option>
+						<option value="2">MaxCDN minified v2.x</option>
+						<option value="3">MaxCDN minified v3.x</option>
+						<option value="4">Google API minified v1.x</option>
+						<option value="5">Google API minified v2.x</option>
+						<option value="6">Google API minified v3.x</option>
+						<option value="7">Microsoft Ajax CDN minified v1.x</option>
+						<option value="8">Microsoft Ajax CDN minified v2.x</option>
+						<option value="9">Microsoft Ajax CDN minified v3.x</option>
+						<option value="10">Cloudflare CDN minified v1.x</option>
+						<option value="11">Cloudflare CDN minified v2.x</option>
+						<option value="12">Cloudflare CDN minified v3.x</option>
 						<option value="13">Jsdelivr CDN minified v1.x</option>
 						<option value="14">Jsdelivr CDN minified v2.x</option>
-						<option value="15">Cloudflare CDN base v3.x</option>
-						<option value="16">Cloudflare CDN minified v3.x</option>
-						<option value="17">base v3.x</option>
-						<option value="18">minified v3.x</option>
+						<option value="15">Jsdelivr CDN minified v3.x</option>
 				</field>
 				<field 
 					name="jqueryui-site"
@@ -149,16 +123,11 @@
 					label="Jquery UI"
 					description="Version 1.12.1">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">Google Api minified+themes</option>
-						<option value="4">MaxCDN minified+themes</option>
-						<option value="5">base+themes</option>
-						<option value="6">minified+themes</option>
-						<option value="7">Cloudflare CDN minified</option>
-						<option value="8">jsdelivr CDN minified</option>
-						<option value="9">jsdelivr CDN minified+themes</option>
-						<option value="10">Microsoft Ajax CDN minified+themes</option>
+						<option value="1">Google Api minified+themes</option>
+						<option value="2">MaxCDN minified+themes</option>
+						<option value="3">Cloudflare CDN minified</option>
+						<option value="4">jsdelivr CDN minified+themes</option>
+						<option value="5">Microsoft Ajax CDN minified+themes</option>
 				</field>
 				<field 
 					name="jqueryui-site-themes"
@@ -198,25 +167,21 @@
 					label="Jquery Mobile"
 					description="Version 1.4.5">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">MaxCDN minified</option>
-						<option value="4">Cloudflare CDN minified</option>
-						<option value="5">Google CDN minified</option>
-						<option value="6">Jsdelivr CDN minified</option>
-						<option value="7">Microsoft Ajax CDN minified</option>
+						<option value="1">MaxCDN minified</option>
+						<option value="2">Cloudflare CDN minified</option>
+						<option value="3">Google CDN minified</option>
+						<option value="4">Jsdelivr CDN minified</option>
+						<option value="5">Microsoft Ajax CDN minified</option>
 				</field>
 				<field 
 					name="qunit-site"
 					 type="radio" 
 					default="0"
 					label="Qunit"
-					description="Version 2.0.1">
+					description="Version 2.3.2">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">MaxCDN minified</option>
-						<option value="4">Cloudflare CDN minified</option>
+						<option value="1">MaxCDN minified</option>
+						<option value="2">Cloudflare CDN minified</option>
 				</field>
 				<field 
 					name="sizzle-site"
@@ -225,10 +190,8 @@
 					label="Sizzle"
 					description="Version 2.3.3">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">Cloudflare CDN minified</option>
-						<option value="4">Jsdelivr CDN minified</option>
+						<option value="1">Cloudflare CDN minified</option>
+						<option value="2">Jsdelivr CDN minified</option>
 				</field>
 				<field 
 					name="mootools-site"
@@ -237,44 +200,39 @@
 					label="Mootools"
 					description="Version 1.6">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">CDN google minified</option>
-						<option value="4">CDN CloudFlare minified</option>
+						<option value="1">CDN google minified</option>
+						<option value="2">CDN CloudFlare minified</option>
 				</field>	
 				<field 
 					name="dojo-site"
 					 type="radio" 
 					default="0"
 					label="Dojo"
-					description="Version 1.11.1">
+					description="Version 1.12.2">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">minified</option>
-						<option value="2">Google API CDN minified</option>
-						<option value="3">CDN CloudFlare minified</option>
-						<option value="4">Jsdelivr CDN minified</option>
+						<option value="1">Google API CDN minified</option>
+						<option value="2">CDN CloudFlare minified</option>
+						<option value="3">Jsdelivr CDN minified</option>
 				</field>
 				<field 
 					name="modernizr-site"
 					 type="radio" 
 					default="0"
 					label="Modernizr"
-					description="Version 3.3.1">
+					description="Version 2.8.3">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">minified</option>
-						<option value="2">Jsdelivr CDN minified v2.8.3</option>
-						<option value="3">Cloudflare CDN minified v2.8.3</option>
+						<option value="1">Jsdelivr CDN minified</option>
+						<option value="2">Cloudflare CDN minified</option>
 				</field>
 				<field 
 					name="less-site"
 					 type="radio" 
 					default="0"
 					label="LESS"
-					description="Version 2.7.1">
+					description="Version 2.7.2">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">minified</option>
-						<option value="2">CDN CloudFlare minified</option>
-						<option value="3">Jsdelivr CDN minified</option>
+						<option value="1">CDN CloudFlare minified</option>
+						<option value="2">Jsdelivr CDN minified</option>
 				</field>
 				<field 
 					name="skel-site"
@@ -283,9 +241,8 @@
 					label="Skel"
 					description="Version 3.0.1">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">minified</option>
-						<option value="2">minified CDN CloudFlare</option>
-						<option value="3">Jsdelivr CDN minified v0.4.6</option>
+						<option value="1">minified CDN CloudFlare</option>
+						<option value="2">Jsdelivr CDN minified</option>
 				</field>	
 				<field 
 					name="ivory-site"
@@ -304,33 +261,27 @@
 					label="skeleton"
 					description="Version 2.0.4">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">minified CDN CloudFlare</option>
-						<option value="4">Jsdelivr CDN base</option>
+						<option value="1">minified CDN CloudFlare</option>
+						<option value="2">Jsdelivr CDN base</option>
 				</field>
 				<field 
 					name="knacss-site"
 					 type="radio" 
 					default="0"
 					label="knacss"
-					description="Version 4.4.5">
+					description="Version 4.4.0">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">Jsdelivr CDN base</option>
+						<option value="1">Jsdelivr CDN base</option>
 				</field>
 				<field 
 					name="fondationzurb-site"
 					 type="radio" 
 					default="0"
 					label="Foundation Zurb"
-					description="Version 6.2.4">
+					description="Version 6.3.1">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">minified CDN CloudFlare</option>
-						<option value="4">Jsdelivr CDN base</option>
+						<option value="1">minified CDN CloudFlare</option>
+						<option value="2">Jsdelivr CDN base</option>
 				</field>
 				<field 
 					name="htmlkickstart-site"
@@ -357,19 +308,17 @@
 					 type="radio" 
 					default="0"
 					label="jquery.easing.js"
-					description="Version 1.3">
+					description="Version 1.4.1">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minifield</option>
-						<option value="3">CDN Cloudflare minifield</option>
-						<option value="4">CDN jsdelivr minifield</option>
+						<option value="1">CDN Cloudflare minifield</option>
+						<option value="2">CDN jsdelivr minifield</option>
 				</field>
 				<field 
 					name="whhg-site"
 					 type="radio" 
 					default="0"
 					label="whhg"
-					description="Version 23 Novembre 2016 (downloaded)">
+					description="Version 31 May 2017 to 3:40AM (downloaded)">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">local base</option>
 						<option value="2">local minified</option>
@@ -380,10 +329,8 @@
 					 type="radio" 
 					default="0"
 					label="angularjs"
-					description="Version 1.5.8">
+					description="Version 1.6.4">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minifield</option>
 						<option value="3">CDN Google minifield</option>
 						<option value="4">CDN jsdelivr minifield</option>
 						<option value="5">CDN Cloudflare minifield</option>
@@ -393,36 +340,25 @@
 					 type="list" 
 					default="0"
 					label="Bootstrap"
-					description="Version 3.3.7">
+					description="Version">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">base+themes</option>
-						<option value="4">minified+themes</option>
-						<option value="5">MaxCDN base</option>
-						<option value="6">MaxCDN base+themes</option>
-						<option value="7">MaxCDN minified</option>
-						<option value="8">MaxCDN minified+themes</option>
-						<option value="9">Microsoft CDN Ajax minified</option>
-						<option value="10">Microsoft CDN Ajax minified+themes</option>
-						<option value="11">base v2.3.2</option>
-						<option value="12">minified v2.3.2</option>
-						<option value="13">minified CDN CloudFlare</option>
-						<option value="14">minified CDN CloudFlare v2.3.2</option>
-						<option value="15">minified CDN CloudFlare v4.0.0-alpha2</option>
+						<option value="1">MaxCDN minified v3.3.7</option>
+						<option value="2">Microsoft CDN Ajax minified v3.3.7</option>
+						<option value="3">minified CDN CloudFlare v3.3.7</option>
+						<option value="4">minified CDN CloudFlare v4.0.0-alpha6</option>
+						<option value="5">CDN jsdelivr minifield v3.3.7</option>
+						<option value="6">CDN jsdelivr minifield v4.0.0-alpha6</option>
 				</field>	
 				<field 
 					name="MapBox-site"
 					 type="list" 
 					default="0"
 					label="Map"
-					description="Version 3.0.1">
+					description="Version">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">mapbox.com (CDN minified) </option>
-						<option value="2">leafletj.com v0.7.7 (CDN minified)</option>
-						<option value="3">leafletj.com v0.7.7 (base local) </option>
-						<option value="4">leafletj.com v0.7.7 (minified local)</option>
-						<option value="5">mapbox.com v3.0.1/GeoJson URL external (CDN minified) </option>
+						<option value="1">mapbox.com v0.37.0 GL (CDN minified) </option>
+						<option value="2">mapbox.com v3.1.1 (CDN minified) </option>
+						<option value="3">mapbox.com v3.0.1/GeoJson URL external (CDN minified) </option>
 				</field>
 				<field 
 					name="cookiesEU-site"
@@ -431,27 +367,22 @@
 					label="Cookies (E.U.)"
 					description="Jquery Cookie Version 1.4.1">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base (Novice)</option>
-						<option value="2">minified (Novice)</option>
-						<option value="3">minified (Expert CDN jsdelivr)</option>
-						<option value="4">minified (Expert CDN CloudFlare)</option>
-						<option value="5">minified (Novice CDN CloudFlare)</option>
-						<option value="6">minified (Novice CDN CloudFlare/CSS Own Custom)</option>
-						<option value="7">minified (Novice CDN jsdelivr)</option>
-						<option value="8">minified (Novice CDN jsdelivr/CSS Own Custom)</option>
-						<option value="9">minified (expert js/CSS Own Custom)</option>
+						<option value="1">minified (Expert CDN jsdelivr)</option>
+						<option value="2">minified (Expert CDN CloudFlare)</option>
+						<option value="3">minified (Novice CDN CloudFlare)</option>
+						<option value="4">minified (Novice CDN CloudFlare/CSS Own Custom)</option>
+						<option value="5">minified (Novice CDN jsdelivr)</option>
+						<option value="6">minified (Novice CDN jsdelivr/CSS Own Custom)</option>
+						<option value="7">minified (expert js/CSS Own Custom)</option>
 				</field>	
 				<field 
 					name="metroUI-site"
 					 type="list" 
 					default="0"
-					label="Metro UI 3.0.15"
-					description="Version">
+					label="Metro UI "
+					description="Version 3.0.17">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">minified (Full separed files CDN Rawgit/MaxCDN)</option>
-						<option value="2">base (Full)</option>
-						<option value="3">minified (Full)</option>
-						<option value="4">minified CloudFlare CDN</option>
+						<option value="1">minified CloudFlare CDN</option>
 				</field>
 				<field 
 					name="weather-icons-site"
@@ -460,23 +391,17 @@
 					label="Weather icons"
 					description="Version 2.0.9">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base (icons) </option>
-						<option value="2">minified (icons)</option>
-						<option value="3">base (wind) </option>
-						<option value="4">minified (wind) </option>
-						<option value="5">minified CloudFlare CDN (wind) </option>
-						<option value="6">minified CloudFlare CDN (icons)</option>
+						<option value="1">minified CloudFlare CDN (wind) </option>
+						<option value="2">minified CloudFlare CDN (icons)</option>
 				</field>
 				<field 
 					name="typicons-site"
 					 type="list" 
 					default="0"
 					label="Typicons"
-					description="Version 2.0.8">
+					description="Version 2.0.9">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base </option>
-						<option value="2">minified </option>
-						<option value="3">minified CloudFlare CDN </option>
+						<option value="1">minified CloudFlare CDN </option>
 				</field>
 				<field 
 					name="foundation-icons-site"
@@ -485,8 +410,6 @@
 					label="foundation icons"
 					description="Version 3">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base </option>
-						<option value="2">minified </option>
 						<option value="3">minified CloudFlare CDN </option>
 						<option value="4">minified jsdelivr CDN </option>
 				</field>
@@ -525,10 +448,8 @@
 					label="Animate.css"
 					description="Version 3.5.2">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">jsdelivr CDN minified</option>
-						<option value="4">CloudFlare CDN minified</option>
+						<option value="1">jsdelivr CDN minified</option>
+						<option value="2">CloudFlare CDN minified</option>
 				</field>
 				<field 
 					name="wowjs-site"
@@ -537,21 +458,16 @@
 					label="wow.js"
 					description="Version 1.1.2">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">jsdelivr CDN minified</option>
-						<option value="4">CloudFlare CDN minified</option>
+						<option value="1">jsdelivr CDN minified</option>
+						<option value="2">CloudFlare CDN minified</option>
 				</field>
 				<field 
 					name="fancyBox-site"
 					 type="list" 
 					default="0"
 					label="fancyBox"
-					description="Version 2.1.5">
+					description="Version 3.0.47">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">jsdelivr CDN minified</option>
 						<option value="4">CloudFlare CDN minified</option>
 				</field>
 				<field 
@@ -559,19 +475,11 @@
 					 type="list" 
 					default="0"
 					label="CountUp"
-					description="Version 1.7.1">
+					description="Version 1.8.5">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">base compatible Angular</option>
-						<option value="4">minified compatible Angular</option>
-						<option value="5">base compatible Jquery</option>
-						<option value="6">minified compatible Jquery</option>
-						<option value="7">CloudFlare CDN base Angular</option>
-						<option value="8">CloudFlare CDN minified Anguler</option>
-						<option value="9">CloudFlare CDN base</option>
-						<option value="10">CloudFlare CDN minified</option>
-						<option value="11">CloudFlare CDN minified v1.0.0(Jquery)</option>
+						<option value="1">CloudFlare CDN minified Anguler</option>
+						<option value="2">CloudFlare CDN minified</option>
+						<option value="3">jsdelivr CDN minified</option>
 				</field>
 				<field 
 					name="waypointsjs-site"
@@ -580,9 +488,7 @@
 					label="waypoints"
 					description="Version 4.0.1">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base (Jquery)</option>
-						<option value="2">minified (Jquery)</option>
-						<option value="3">CloudFlare CDN base (Jquery)</option>
+						<option value="3">jsdelivr CDN minified (Jquery)</option>
 						<option value="4">CloudFlare CDN minified (Jquery)</option>
 				</field>
 				<field 
@@ -590,30 +496,19 @@
 					 type="list" 
 					default="0"
 					label="Parallax"
-					description="Version 2.1.13">
+					description="Version 2.1.3">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base </option>
-						<option value="2">minified </option>
-						<option value="3">base (Jquery)</option>
-						<option value="4">minified (Jquery)</option>
-						<option value="5">base (Jquery) v1.1.3</option>
-						<option value="6">minified (Jquery) v1.1.3</option>
-						<option value="7">CloudFlare CDN base (Jquery)</option>
-						<option value="8">CloudFlare CDN minified (Jquery)</option>
-						<option value="9">CloudFlare CDN base v1.1.3 (Jquery)</option>
-						<option value="10">CloudFlare CDN minified v1.1.3 (Jquery)</option>
+						<option value="9">jsdelivr CDN minified (Jquery)</option>
+						<option value="10">CloudFlare CDN minified (Jquery)</option>
 				</field>
 				<field 
 					name="smoothjs-site"
 					 type="list" 
 					default="0"
 					label="Smooth-Scroll"
-					description="Version 10.1.0">
+					description="Version 11.1.0">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">base</option>
-						<option value="2">minified</option>
-						<option value="3">jsdelivr CDN minified</option>
-						<option value="4">CloudFlare CDN minified</option>
+						<option value="1">CloudFlare CDN minified</option>
 				</field>
 			
 			</fieldset>
