@@ -340,9 +340,8 @@
 					label="Map"
 					description="Version">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
-						<option value="1">mapbox.com v0.37.0 GL (CDN minified) </option>
-						<option value="2">mapbox.com v3.1.1 (CDN minified) </option>
-						<option value="3">mapbox.com v3.0.1/GeoJson URL external (CDN minified) </option>
+						<option value="1">mapbox.com v3.1.1/GeoJson URL external (CDN minified) </option>
+						<option value="1">mapbox.com v3.0.1/GeoJson URL external (custom) </option>
 				</field>
 				<field 
 					name="cookiesEU-site"

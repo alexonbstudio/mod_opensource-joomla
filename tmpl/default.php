@@ -240,8 +240,8 @@ defined('_JEXEC') or die;
 					$docs->addStyleSheet( 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' ); 
 				break;
 				case 2: 
-					if($html4or5_config == 0): $docs->addScript( 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js' );  else : echo "\n".'<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3./js/bootstrap.min.js"></script>'; endif;
-					$docs->addStyleSheet( 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3./css/bootstrap.min.css' ); 
+					if($html4or5_config == 0): $docs->addScript( 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js' );  else : echo "\n".'<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>'; endif;
+					$docs->addStyleSheet( 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css' ); 
 				break;
 				case 3: 
 					if($html4or5_config == 0): $docs->addScript( 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js' );  else : echo "\n".'<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>'; endif;
@@ -441,38 +441,20 @@ defined('_JEXEC') or die;
 			switch($mapbox_site):
 				case 1: 
 					if($html4or5_config == 0): 
-						$docs->addScript('//api.mapbox.com/mapbox.js/v2.4.0/mapbox.js' );  
-						$docs->addStyleSheet('//api.mapbox.com/mapbox.js/v2.4.0/mapbox.css'); 
+						$docs->addScript('https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js' );  
+						$docs->addStyleSheet('https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css'); 
 					else : 
-						echo "\n".'<script src="https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js"></script>'; 
-						$docs->addStyleSheet('//api.mapbox.com/mapbox.js/v2.4.0/mapbox.css'); 
+						echo "\n".'<script src="https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js"></script>'; 
+						$docs->addStyleSheet('https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css'); 
 					endif;
 				break;
 				case 2: 
 					if($html4or5_config == 0): 
-						$docs->addScript('http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js' );  
-						$docs->addStyleSheet('http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css'); 
+						$docs->addScript('https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js' );  
+						$docs->addStyleSheet('https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css'); 
 					else : 
-						echo "\n".'<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>'; 
-						$docs->addStyleSheet('http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css'); 
-					endif;
-				break;
-				case 3: 
-					if($html4or5_config == 0): 
-						$docs->addScriptVersion($own_cdn.'/mapbox/leaflet.js');  
-						$docs->addStyleSheetVersion($own_cdn.'/mapbox/leaflet.css'); 
-					else : 
-						echo "\n".'<script src="'.$own_cdn.'/mapbox/leaflet.js"></script>'; 
-						$docs->addStyleSheetVersion($own_cdn.'/mapbox/leaflet.css'); 
-					endif;
-				break;
-				case 4: 
-					if($html4or5_config == 0): 
-						$docs->addScriptVersion($own_cdn.'/mapbox/leaflet-src.js'); 
-						$docs->addStyleSheetVersion($own_cdn.'/mapbox/leaflet.min.css'); 
-					else : 
-						echo "\n".'<script src="'.$own_cdn.'/mapbox/leaflet-src.js"></script>'; 
-						$docs->addStyleSheetVersion($own_cdn.'/mapbox/leaflet.min.css'); 
+						echo "\n".'<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js"></script>'; 
+						$docs->addStyleSheet('https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css'); 
 					endif;
 				break;
 			endswitch;
