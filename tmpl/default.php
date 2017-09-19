@@ -248,10 +248,18 @@ defined('_JEXEC') or die;
 					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css' ); 
 				break;
 				case 4: 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha6/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha6/js/bootstrap.min.js"></script>'; endif;
+					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha6/css/bootstrap.min.css' ); 
+				break;
+				case 5: 
 					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>'; endif;
 					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css' ); 
 				break;
-				case 5: 
+				case 6: 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-alpha6/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-alpha6/js/bootstrap.min.js"></script>'; endif;
+					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-alpha6/css/bootstrap.min.css' ); 
+				break; 
+				case 7: 
 					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-beta/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>'; endif;
 					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-beta/css/bootstrap.min.css' ); 
 				break; 

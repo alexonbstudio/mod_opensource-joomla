@@ -338,9 +338,11 @@
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">MaxCDN minified v3.3.7</option>
 						<option value="2">minified CDN CloudFlare v3.3.7</option>
-						<option value="3">minified CDN CloudFlare v4.0.0-beta</option>
-						<option value="4">CDN jsdelivr minifield v3.3.7</option>
-						<option value="5">CDN jsdelivr minifield v4.0.0-beta</option>
+						<option value="3">minified CDN CloudFlare v4.0.0-alpha6</option>
+						<option value="4">minified CDN CloudFlare v4.0.0-beta</option>
+						<option value="5">CDN jsdelivr minifield v3.3.7</option>
+						<option value="6">CDN jsdelivr minifield v4.0.0-alpha6</option>
+						<option value="7">CDN jsdelivr minifield v4.0.0-beta</option>
 				</field>	
 				<field 
 					name="MapBox-site"
