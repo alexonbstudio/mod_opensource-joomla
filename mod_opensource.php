@@ -2,7 +2,7 @@
 /**
  * @package	Module for Joomla!
  * @subpackage  mod_opensource
- * @version	2.0
+ * @version	2.2.3
  * @author	AlexonBalangue.me
  * @copyright	(C) 2012-2016 Alexon Balangue. All rights reserved.
  * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -20,6 +20,7 @@ $jqueryui_site = $params->get('jqueryui-site');
 $jquerymobile_site = $params->get('jquerymobile-site');
 $mapbox_site = $params->get('MapBox-site');
 $qunit_site = $params->get('qunit-site');
+$popper_site = $params->get('popper-site');
 $sizzle_site = $params->get('sizzle-site');
 $mootools_site = $params->get('mootools-site');
 $dojo_site = $params->get('dojo-site');
