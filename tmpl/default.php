@@ -2,7 +2,7 @@
 /**
  * @package	Module for Joomla!
  * @subpackage  mod_opensource
- * @version	2.1
+ * @version	2.4
  * @author	AlexonBalangue.me
  * @copyright	(C) 2012-2016 Alexon Balangue. All rights reserved.
  * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -26,13 +26,18 @@ defined('_JEXEC') or die;
 	}
 			switch($fontawesome_site):
 				case 1: 
-					$docs->addStyleSheet( $proto_fi.'maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' ); 
+					$docs->addCustomTag( '<script>FontAwesomeConfig = { autoAddCss: false }</script>
+					<script defer src="'.$own_cdn.'/fa/js/fa-v4-shims.min.js"></script>
+					<script defer src="'.$own_cdn.'/fa/js/fontawesome-all.min.js"></script>' ); 
+					$docs->addStyleSheet( $own_cdn.'/fa/css/fontawesome-all.min.css' ); 
 				break;
 				case 2: 
-					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' ); 
+					$docs->addCustomTag('<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>' ); 
 				break;
 				case 3: 
-					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css' ); 
+					$docs->addCustomTag( '<script>FontAwesomeConfig = { autoAddCss: false }</script>
+					<script defer src="'.$own_cdn.'/fa/js/fontawesome-all.min.js"></script>' ); 
+					$docs->addStyleSheet( $own_cdn.'/fa/css/fontawesome-all.min.css' ); 
 				break;
 			endswitch;
 			switch($icofont_site):
@@ -212,7 +217,7 @@ defined('_JEXEC') or die;
 					$docs->addStyleSheetVersion($own_cdn.'/whhg/whhg.min.css', 'text/css', 'all' ); 
 				break;
 				case 3: 
-					$docs->addStyleSheet( ''.$proto_fi.'www.webhostinghub.com/glyphs/css/whhg.css', 'text/css', 'all' ); 
+					$docs->addStyleSheet( $proto_fi.'www.webhostinghub.com/glyphs/css/whhg.css', 'text/css', 'all' ); 
 				break;
 			endswitch;
 			switch($jqueryeasingjs_site):
@@ -244,8 +249,8 @@ defined('_JEXEC') or die;
 					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css' ); 
 				break;
 				case 3: 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>'; endif;
-					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css' ); 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-betafa-v4-shims.min/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-betafa-v4-shims.min/js/bootstrap.min.js"></script>'; endif;
+					$docs->addStyleSheet( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-betafa-v4-shims.min/css/bootstrap.min.css' ); 
 				break;
 				case 4: 
 					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha6/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha6/js/bootstrap.min.js"></script>'; endif;
@@ -260,8 +265,8 @@ defined('_JEXEC') or die;
 					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-alpha6/css/bootstrap.min.css' ); 
 				break; 
 				case 7: 
-					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-beta/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>'; endif;
-					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-beta/css/bootstrap.min.css' ); 
+					if($html4or5_config == 0): $docs->addScript( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-betafa-v4-shims.min/js/bootstrap.min.js' );  else : echo "\n".'<script src="'.$proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-betafa-v4-shims.min/js/bootstrap.min.js"></script>'; endif;
+					$docs->addStyleSheet( $proto_fi.'cdn.jsdelivr.net/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' ); 
 				break; 
 			endswitch;
 			switch($cookiesEU_site):
