@@ -42,7 +42,7 @@
 					description="Version" />
 				<field 
 					name="dnsprefetch_yoursite"
-					type="radio" 
+					type="list" 
 					default="1"
 					label="JFIELD_MOD_OPENSOURCE_MYSITE"
 					description="Version">
@@ -51,7 +51,7 @@
 				</field>
 				<field 
 					name="dnsprefetch_googleapi"
-					type="radio" 
+					type="list" 
 					default="0"
 					label="Google Ajax API Labs"
 					description="Version">
@@ -60,7 +60,7 @@
 				</field>
 				<field 
 					name="dnsprefetch_cdnjscloudflare"
-					type="radio" 
+					type="list" 
 					default="0"
 					label="CloudFlare CDN JS"
 					description="Version">
@@ -74,7 +74,7 @@
 					 type="list" 
 					default="0"
 					label="font awesome"
-					description="">
+					description="Version">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">JFIELD_MOD_OPENSOURCE_SHOW</option>
 				</field>
@@ -128,6 +128,51 @@
 					 type="list" 
 					default="0"
 					label="CountUp"
+					description="Version">
+						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
+						<option value="1">JFIELD_MOD_OPENSOURCE_SHOW</option>
+				</field>
+				<field 
+					name="jquerywaypoints-site"
+					 type="list" 
+					default="0"
+					label="Jquery Waypoints"
+					description="Version">
+						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
+						<option value="1">JFIELD_MOD_OPENSOURCE_SHOW</option>
+				</field>
+				<field 
+					name="isotope-site"
+					 type="list" 
+					default="0"
+					label="Jquery isotope"
+					description="Version">
+						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
+						<option value="1">JFIELD_MOD_OPENSOURCE_SHOW</option>
+				</field>
+				<field 
+					name="venobox-site"
+					 type="list" 
+					default="0"
+					label="venobox"
+					description="Version">
+						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
+						<option value="1">JFIELD_MOD_OPENSOURCE_SHOW</option>
+				</field>
+				<field 
+					name="owlcarousel-site"
+					 type="list" 
+					default="0"
+					label="OwlCarousel"
+					description="Version">
+						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
+						<option value="1">JFIELD_MOD_OPENSOURCE_SHOW</option>
+				</field>
+				<field 
+					name="aos-site"
+					 type="list" 
+					default="0"
+					label="aos"
 					description="Version">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">JFIELD_MOD_OPENSOURCE_SHOW</option>
@@ -188,6 +233,46 @@
 					 type="text"
 					default="2.0.6"
 					label="CountUp" 
+					description=""
+					filter="string" 
+				/>
+				<field 
+					name="jquerywaypoints-version"
+					 type="text"
+					default="4.0.1"
+					label="Jquery Waypoints" 
+					description=""
+					filter="string" 
+				/>
+				<field 
+					name="isotope-version"
+					 type="text"
+					default="3.0.6"
+					label="jquery isotope" 
+					description=""
+					filter="string" 
+				/>
+				<field 
+					name="venobox-version"
+					 type="text"
+					default="1.9.0"
+					label="venobox" 
+					description=""
+					filter="string" 
+				/>
+				<field 
+					name="owlcarousel-version"
+					 type="text"
+					default="2.3.4"
+					label="jquery isotope" 
+					description=""
+					filter="string" 
+				/>
+				<field 
+					name="aos-version"
+					 type="text"
+					default="2.3.4"
+					label="aos" 
 					description=""
 					filter="string" 
 				/>
