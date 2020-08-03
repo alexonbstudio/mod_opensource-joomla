@@ -23,6 +23,13 @@ $jqueryeasingjs_site = $params->get('jqueryeasingjs-site');
 $animate_site = $params->get('animate-site');
 $wowjs_site = $params->get('wowjs-site');
 $CountUPJs_site = $params->get('countupjs-site');
+$jquerywaypoints_site = $params->get('jquerywaypoints-site');
+$isotope_site = $params->get('isotope-site');
+$venobox_site = $params->get('venobox-site');
+$owlcarousel_site = $params->get('owlcarousel-site');
+$aos_site = $params->get('aos-site');
+
+
 #frontend - versionning
 $bootstrap_version = $params->get('bootstrap-version');
 $fontawesome_version = $params->get('fontawesome-version');
@@ -32,6 +39,13 @@ $jqueryeasingjs_version = $params->get('jqueryeasingjs-version');
 $animate_version = $params->get('animate-version');
 $wowjs_version = $params->get('wowjs-version');
 $CountUPJs_version = $params->get('countupjs-version');
+$jquerywaypoints_version = $params->get('jquerywaypoints-version');
+$isotope_version = $params->get('isotope-version');
+$venobox_version = $params->get('venobox-version');
+$OwlCarousel_version = $params->get('owlcarousel-version');
+$aos_version = $params->get('aos-version');
+
+
 $dnsprefetch_yoursite = $params->get('dnsprefetch_yoursite');
 $dnsprefetch_googleapi = $params->get('dnsprefetch_googleapi');
 $dnsprefetch_cdnjscloudflare = $params->get('dnsprefetch_cdnjscloudflare');
