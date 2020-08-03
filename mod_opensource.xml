@@ -264,7 +264,7 @@
 					name="owlcarousel-version"
 					 type="text"
 					default="2.3.4"
-					label="jquery isotope" 
+					label="owlcarousel" 
 					description=""
 					filter="string" 
 				/>
