@@ -2,13 +2,17 @@
 /**
  * @package	Module for Joomla!
  * @subpackage  mod_opensource
- * @version	2.4.1
+ * @version	2.4.2
  * @author	Alexon Balangue
  * @link https://alexonbstudio.fr
  * @copyright	(C) 2012-2020 AlexonbStudio. All rights reserved.
  * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 defined('_JEXEC') or die;
+
+#frontend Add script <head> & <body>
+$ModOPhead_script = $params->get('head-script');
+$ModOPbody_script = $params->get('body-script');
 
 #frontend
 $bootstrap_site = $params->get('bootstrap-site');
@@ -28,8 +32,6 @@ $jqueryeasingjs_version = $params->get('jqueryeasingjs-version');
 $animate_version = $params->get('animate-version');
 $wowjs_version = $params->get('wowjs-version');
 $CountUPJs_version = $params->get('countupjs-version');
-
-#FIX
 $dnsprefetch_yoursite = $params->get('dnsprefetch_yoursite');
 $dnsprefetch_googleapi = $params->get('dnsprefetch_googleapi');
 $dnsprefetch_cdnjscloudflare = $params->get('dnsprefetch_cdnjscloudflare');
