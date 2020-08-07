@@ -59,7 +59,23 @@
 					description="Version">
 						<option value="0">JFIELD_MOD_OPENSOURCE_HIDE</option>
 						<option value="1">JFIELD_MOD_OPENSOURCE_SHOW</option>
-				</field>				
+				</field>	
+				<field 
+					name="dnsprefetch_custom"
+					 type="text"
+					default=""
+					label="DNS prefetch" 
+					description="eg: https://cdn.domain.tld"
+					filter="string" 
+				/>		
+				<field 
+					name="prefetch_url"
+					 type="text"
+					default=""
+					label="prefetch" 
+					description="eg: https://domain.tld"
+					filter="string" 
+				/>			
 			</fieldset>
 			<fieldset name="sources" label="Sources">		
 				<field 

@@ -52,7 +52,8 @@ $aos_version = $params->get('aos-version');
 
 
 $dnsprefetch_yoursite = $params->get('dnsprefetch_yoursite', 1);
-$dnsprefetch_url = $params->get('dnsprefetch_url', 1);
+$dnsprefetch_custom = $params->get('dnsprefetch_custom');
+$prefetch_url = $params->get('prefetch_url');
 $dnsprefetch_googleapi = $params->get('dnsprefetch_googleapi', 1);
 $dnsprefetch_cdnjscloudflare = $params->get('dnsprefetch_cdnjscloudflare', 1);
 

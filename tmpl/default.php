@@ -12,6 +12,8 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Document;
+use Joomla\CMS\Uri\Uri;
+
 	$docs = Factory::getDocument();
 	
 		$protocols = isset($_SERVER["HTTPS"]) ? 'https' : 'http';
@@ -66,7 +68,7 @@ use Joomla\CMS\Document;
 			/*****************[Prerender and prefetch]******************/
 
 			if($dnsprefetch_yoursite == 1){ 
-				$docs->addCustomTag('<link rel="dns-prefetch" href="'.JURI::base().'">');
+				$docs->addCustomTag('<link rel="dns-prefetch" href="'.Uri::base().'">');
 			}
 			
 			if($dnsprefetch_googleapi == 1){ 
