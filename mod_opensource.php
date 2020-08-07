@@ -1,8 +1,8 @@
 <?php
 /**
- * @package	Module for Joomla!
+ * @package	Module for Joomla 4 BETA 3 | PHP7.2 tested
  * @subpackage  mod_opensource
- * @version	2.4.2
+ * @version	2.4.3
  * @author	Alexon Balangue
  * @link https://alexonbstudio.fr
  * @copyright	(C) 2012-2020 AlexonbStudio. All rights reserved.
@@ -10,24 +10,29 @@
  */
 defined('_JEXEC') or die;
 
+use Joomla\CMS\Helper\ModuleHelper;
+use Joomla\CMS\HTML\HTMLHelper;
+
+
 #frontend Add script <head> & <body>
 $ModOPhead_script = $params->get('head-script');
 $ModOPbody_script = $params->get('body-script');
 
 #frontend
-$bootstrap_site = $params->get('bootstrap-site');
-$fontawesome_site = $params->get('fontawesome-site');
-$jquery_site = $params->get('jquery-site');
-$modernizr_site = $params->get('modernizr-site');
-$jqueryeasingjs_site = $params->get('jqueryeasingjs-site');
-$animate_site = $params->get('animate-site');
-$wowjs_site = $params->get('wowjs-site');
-$CountUPJs_site = $params->get('countupjs-site');
-$jquerywaypoints_site = $params->get('jquerywaypoints-site');
-$isotope_site = $params->get('isotope-site');
-$venobox_site = $params->get('venobox-site');
-$owlcarousel_site = $params->get('owlcarousel-site');
-$aos_site = $params->get('aos-site');
+
+$bootstrap_site = $params->get('bootstrap-site', 1);
+$fontawesome_site = $params->get('fontawesome-site', 1);
+$jquery_site = $params->get('jquery-site', 1);
+$modernizr_site = $params->get('modernizr-site', 1);
+$jqueryeasingjs_site = $params->get('jqueryeasingjs-site', 1);
+$animate_site = $params->get('animate-site', 1);
+$wowjs_site = $params->get('wowjs-site', 1);
+$CountUPJs_site = $params->get('countupjs-site', 1);
+$jquerywaypoints_site = $params->get('jquerywaypoints-site', 1);
+$isotope_site = $params->get('isotope-site', 1);
+$venobox_site = $params->get('venobox-site', 1);
+$owlcarousel_site = $params->get('owlcarousel-site', 1);
+$aos_site = $params->get('aos-site', 1);
 
 
 #frontend - versionning
@@ -46,9 +51,11 @@ $OwlCarousel_version = $params->get('owlcarousel-version');
 $aos_version = $params->get('aos-version');
 
 
-$dnsprefetch_yoursite = $params->get('dnsprefetch_yoursite');
-$dnsprefetch_googleapi = $params->get('dnsprefetch_googleapi');
-$dnsprefetch_cdnjscloudflare = $params->get('dnsprefetch_cdnjscloudflare');
+$dnsprefetch_yoursite = $params->get('dnsprefetch_yoursite', 1);
+$dnsprefetch_url = $params->get('dnsprefetch_url', 1);
+$dnsprefetch_googleapi = $params->get('dnsprefetch_googleapi', 1);
+$dnsprefetch_cdnjscloudflare = $params->get('dnsprefetch_cdnjscloudflare', 1);
 
 
-require JModuleHelper::getLayoutPath('mod_opensource', $params->get('layout', 'default'));
+require ModuleHelper::getLayoutPath('mod_opensource', $params->get('layout', 'default'));
+

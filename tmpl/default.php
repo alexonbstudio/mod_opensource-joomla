@@ -1,8 +1,8 @@
 <?php
 /**
- * @package	Module for Joomla!
+ * @package	Module for Joomla 4 BETA 3 | PHP7.2 tested
  * @subpackage  mod_opensource
- * @version	2.4.2
+ * @version	2.4.3
  * @author	Alexon Balangue
  * @link https://alexonbstudio.fr
  * @copyright	(C) 2012-2020 AlexonbStudio. All rights reserved.
@@ -10,17 +10,19 @@
  */
 defined('_JEXEC') or die;
 
-	$docs = JFactory::getDocument();
+use Joomla\CMS\Factory;
+use Joomla\CMS\Document;
+	$docs = Factory::getDocument();
 	
 		$protocols = isset($_SERVER["HTTPS"]) ? 'https' : 'http';
-			if($fontawesome_site == 1){
+			if($fontawesome_site == 1 && !empty($fontawesome_version)){
 				$docs->addCustomTag( '<script defer src="'.$protocols.'://cdnjs.cloudflare.com/ajax/libs/font-awesome/'.$fontawesome_version.'/js/all.min.js"></script>' ); 
 				$docs->addStyleSheet($protocols.'://cdnjs.cloudflare.com/ajax/libs/font-awesome/'.$fontawesome_version.'/css/all.min.css' ); 
 			}
-			if($jquery_site == 1){
+			if($jquery_site == 1 && !empty($jquery_version)){
 				echo '<script src="'.$protocols.'://cdnjs.cloudflare.com/ajax/libs/jquery/'.$jquery_version.'/jquery.min.js"></script>';
 			}
-			if($jqueryeasingjs_site == 1){
+			if($jqueryeasingjs_site == 1 && !empty($jqueryeasingjs_version)){
 				echo '<script src="'.$protocols.'://cdnjs.cloudflare.com/ajax/libs/jquery-easing/'.$jqueryeasingjs_version.'/jquery.easing.min.js"></script>';
 			}
 			if($bootstrap_site == 1 && !empty($bootstrap_version)){
