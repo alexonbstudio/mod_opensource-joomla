@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="4.0" client="site" method="upgrade">
+<extension type="module" version="3.9" client="site" method="upgrade">
 	<name>Module - Open Source</name>
 	<author>Alexon Balangue</author>
 	<creationDate>30 january 2017</creationDate>
