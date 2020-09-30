@@ -2,7 +2,7 @@
 /**
  * @package	Module for Joomla 4 BETA 3 | PHP7.2 tested
  * @subpackage  mod_opensource
- * @version	2.4.3
+ * @version	2.4.4
  * @author	Alexon Balangue
  * @link https://alexonbstudio.fr
  * @copyright	(C) 2012-2020 AlexonbStudio. All rights reserved.
