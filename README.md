@@ -1,7 +1,15 @@
 # mod_opensource-joomla
 Open Source from cdnjs #cloudflare and clean code No need to update or i fix later if Joomla change variable &amp; function Version >= 4.0
+### YOU CAN MAKE A DONATION CRYPTOCURRENCY
+
+CRO : 0x73B72a87A241B93a1cd9696A363f2C7821B58009
+BTC: 35ZKG1kfHyeg4oywRQB5aA9CQWrNoTCqSz
+BCH: bitcoincash:qrdtttjs9ghwggh0ramgxqprfu5vj3723cwf65ntqc
+ETH: 0x73B72a87A241B93a1cd9696A363f2C7821B58009 
+LTC: M8KVcKJMh7nYV11yXvwAbnuuh5fqFebpqd
+XML: GB67TJFJO3GUA432EJ4JTODHFYSBTM44P4XQCDOFTXJNNPV2UKUJYVBF | MEMO: 3041041837
+DAI: 0x73B72a87A241B93a1cd9696A363f2C7821B58009
+BAT: 0x73B72a87A241B93a1cd9696A363f2C7821B58009
 
 
-## TODO
 
-+ Make update module https://github.com/alexonbstudio/joomla-update
