@@ -72,11 +72,11 @@ use Joomla\CMS\Uri\Uri;
 			}
 			
 			if($dnsprefetch_googleapi == 1){ 
-				$docs->addCustomTag('<link rel="dns-prefetch" href="'.$protocols.'ajax.googleapis.com">');
+				$docs->addCustomTag('<link rel="dns-prefetch" href="https://ajax.googleapis.com">');
 			}
 			
 			if($dnsprefetch_cdnjscloudflare == 1){ 
-				$docs->addCustomTag('<link rel="dns-prefetch" href="'.$protocols.'cdnjs.cloudflare.com">');
+				$docs->addCustomTag('<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">');
 			}
 			
 			if(!empty($dnsprefetch_custom)){ 
