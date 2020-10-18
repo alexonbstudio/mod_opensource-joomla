@@ -2,7 +2,7 @@
 /**
  * @package	Module for Joomla 4 BETA 3 | PHP7.2 tested
  * @subpackage  mod_opensource
- * @version	2.4.4
+ * @version	2.4.5
  * @author	Alexon Balangue
  * @link https://alexonbstudio.fr
  * @copyright	(C) 2012-2020 AlexonbStudio. All rights reserved.
@@ -23,6 +23,7 @@ $ModOPbody_script = $params->get('body-script');
 $bootstrap_site = $params->get('bootstrap-site', 1);
 $fontawesome_site = $params->get('fontawesome-site', 1);
 $jquery_site = $params->get('jquery-site', 1);
+$typed_site = $params->get('typed-site', 1);
 $modernizr_site = $params->get('modernizr-site', 1);
 $jqueryeasingjs_site = $params->get('jqueryeasingjs-site', 1);
 $animate_site = $params->get('animate-site', 1);
@@ -39,6 +40,7 @@ $aos_site = $params->get('aos-site', 1);
 $bootstrap_version = $params->get('bootstrap-version');
 $fontawesome_version = $params->get('fontawesome-version');
 $jquery_version = $params->get('jquery-version');
+$typed_version = $params->get('typed-version');
 $modernizr_version = $params->get('modernizr-version');
 $jqueryeasingjs_version = $params->get('jqueryeasingjs-version');
 $animate_version = $params->get('animate-version');

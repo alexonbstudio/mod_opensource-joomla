@@ -2,7 +2,7 @@
 /**
  * @package	Module for Joomla 4 BETA 3 | PHP7.2 tested
  * @subpackage  mod_opensource
- * @version	2.4.4
+ * @version	2.4.5
  * @author	Alexon Balangue
  * @link https://alexonbstudio.fr
  * @copyright	(C) 2012-2020 AlexonbStudio. All rights reserved.
@@ -23,6 +23,9 @@ use Joomla\CMS\Uri\Uri;
 			}
 			if($jquery_site == 1 && !empty($jquery_version)){
 				echo '<script src="'.$protocols.'://cdnjs.cloudflare.com/ajax/libs/jquery/'.$jquery_version.'/jquery.min.js"></script>';
+			}
+			if($typed_site == 1 && !empty($typed_version)){
+				echo '<script src="'.$protocols.'://cdnjs.cloudflare.com/ajax/libs/typed.js/'.$typed_version.'/typed.min.js"></script>';
 			}
 			if($jqueryeasingjs_site == 1 && !empty($jqueryeasingjs_version)){
 				echo '<script src="'.$protocols.'://cdnjs.cloudflare.com/ajax/libs/jquery-easing/'.$jqueryeasingjs_version.'/jquery.easing.min.js"></script>';
