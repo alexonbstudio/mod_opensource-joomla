@@ -4,7 +4,7 @@
  * @subpackage  mod_opensource
  * @version	2.4.5
  * @author	Alexon Balangue
- * @link https://alexonbstudio.fr
+ * @link https://alexonb.studio
  * @copyright	(C) 2012-2020 AlexonbStudio. All rights reserved.
  * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
@@ -34,7 +34,8 @@ $isotope_site = $params->get('isotope-site', 1);
 $venobox_site = $params->get('venobox-site', 1);
 $owlcarousel_site = $params->get('owlcarousel-site', 1);
 $aos_site = $params->get('aos-site', 1);
-
+$ionicons_site = $params->get('ionicons-site', 1);
+$scrollRevealjs_site = $params->get('scrollRevealjs-site', 1);
 
 #frontend - versionning
 $bootstrap_version = $params->get('bootstrap-version');
@@ -51,6 +52,8 @@ $isotope_version = $params->get('isotope-version');
 $venobox_version = $params->get('venobox-version');
 $OwlCarousel_version = $params->get('owlcarousel-version');
 $aos_version = $params->get('aos-version');
+$ionicons_version = $params->get('ionicons-version', 1);
+$scrollRevealjs_version = $params->get('scrollRevealjs-version', 1);
 
 
 $dnsprefetch_yoursite = $params->get('dnsprefetch_yoursite', 1);

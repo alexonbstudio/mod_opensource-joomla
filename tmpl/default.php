@@ -2,9 +2,9 @@
 /**
  * @package	Module for Joomla 4 BETA 3 | PHP7.2 tested
  * @subpackage  mod_opensource
- * @version	2.4.5
+ * @version	2.4.6
  * @author	Alexon Balangue
- * @link https://alexonbstudio.fr
+ * @link https://alexonb.studio
  * @copyright	(C) 2012-2020 AlexonbStudio. All rights reserved.
  * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
@@ -33,6 +33,12 @@ use Joomla\CMS\Uri\Uri;
 			if($bootstrap_site == 1 && !empty($bootstrap_version)){
 				echo '<script src="'.$protocols.'://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/'.$bootstrap_version.'/js/bootstrap.bundle.min.js"></script>';
 				$docs->addStyleSheet( $protocols.'://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/'.$bootstrap_version.'/css/bootstrap.min.css' ); 
+			}
+			if($scrollRevealjs_site == 1 && !empty($scrollRevealjs_version)){
+				echo '<script src="'.$protocols.'://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/'.$scrollRevealjs_version.'/scrollreveal.min.js"></script>';
+			}
+			if($ionicons_site == 1 && !empty($ionicons_version)){
+				$docs->addStyleSheet( $protocols.'://dnjs.cloudflare.com/ajax/libs/ionicons/'.$ionicons_version.'/css/ionicons-core.min.css' ); 
 			}
 			if($animate_site == 1 && !empty($animate_version)){
 				$docs->addStyleSheet($protocols.'://cdnjs.cloudflare.com/ajax/libs/animate.css/'.$animate_version.'/animate.min.css');
